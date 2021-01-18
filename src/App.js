@@ -1,9 +1,10 @@
 import "./App.css";
+import Workout from "./containers/Workout";
 
 function App() {
   return (
     <div className="App">
-      <h1>Kettlebell Workout Generator</h1>
+      <Workout />
     </div>
   );
 }
