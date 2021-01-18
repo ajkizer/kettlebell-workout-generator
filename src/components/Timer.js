@@ -32,7 +32,16 @@ const Timer = ({
 
   return (
     <>
-      <h1>{display}</h1>
+      <h2 className="timer-display">{display}</h2>
+      <Col>
+        <Button
+          variant="danger"
+          className="rest-indicator"
+          disabled={timerState.period !== "REST"}
+        >
+          REST BREAK!!!
+        </Button>
+      </Col>
       <p>Sets Completed: {workout.setsCompleted}/12</p>
       {workout.exercises.length &&
         workout.exercises.map((exercise, index) =>

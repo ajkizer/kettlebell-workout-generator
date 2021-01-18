@@ -12,8 +12,8 @@ const Workout = () => {
 
   const [workoutOptions, setWorkoutOptions] = useState({
     totalSets: 12,
-    roundTime: 3,
-    restTime: 1,
+    roundTime: 60,
+    restTime: 60,
     conditioningTime: 300,
     prepTime: 5,
   });
@@ -161,6 +161,22 @@ const Workout = () => {
               workout={workout}
             />
           </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="instructions">
+            Instructions: Just follow the timer! First exercise is the main
+            exercise, meant to improve your total body strength and
+            conditioning; you'll complete 5 sets of 1 minute. Second and third
+            exercises are your lower and upper body assistance exercises, chosen
+            to help you build muscle and promote a balance between opposing
+            muscle groups. You will do 3 sets of 1 minute for each of these
+            exercises, focusing on slow and controlled movements throughout the
+            set. The last exercise is meant to help you burn off body fat and
+            improve your cardiovascular health. 1 set of 5 minutes. As always,
+            stay safe, have fun, and be sure to stretch afterwards.
+          </div>
         </Col>
       </Row>
     </Container>
